@@ -1,0 +1,26 @@
+repositories:
+  default:
+    features:
+      has_issues: false
+      has_wiki: false
+      has_projects: false
+      has_downloads: false
+    branches:
+      prod:
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: true
+        required_status_checks:
+          require_review: true
+          strict: true
+      test:
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: true
+        required_status_checks:
+          require_review: true
+          strict: true
+      dev:
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: false
+        required_status_checks:
+          require_review: true
+          strict: true
