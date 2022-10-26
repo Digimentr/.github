@@ -7,18 +7,21 @@ repositories:
       has_downloads: false
     branches:
       prod:
+      	required_approving_review_count: 1
         dismiss_stale_reviews: true
         require_code_owner_reviews: true
         required_status_checks:
           require_review: true
           strict: true
       test:
+      	required_approving_review_count: 1
         dismiss_stale_reviews: true
         require_code_owner_reviews: true
         required_status_checks:
           require_review: true
           strict: true
       dev:
+      	required_approving_review_count: 1
         dismiss_stale_reviews: true
         require_code_owner_reviews: false
         required_status_checks:
